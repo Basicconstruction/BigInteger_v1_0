@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.cpp
+BigInteger.h
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+iterator
+-
+BigInteger.h
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+BigInteger.h
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+iterator
+-
+BigInteger.h
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+iostream
+-
+vector
+-
+algorithm
+-
+cassert
+-
+climits
+-
+iomanip
+-
+cstring
+-
+ctime
+-
+chrono
+-
+ctime
+-
+list
+-
+deque
+-
+sstream
+-
+iterator
+-
+
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/main.cpp
+iostream
+-
+BigInteger.h
+C:/Users/hay boy/CLionProjects/BigInteger_v1.0/BigInteger.h
+

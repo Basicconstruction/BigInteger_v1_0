@@ -1,0 +1,3 @@
+"D:\Program Files\x64\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\BigInteger_v1_0.dir/objects.a
+D:\MingW\bin\ar.exe cr CMakeFiles\BigInteger_v1_0.dir/objects.a @CMakeFiles\BigInteger_v1_0.dir\objects1.rsp
+D:\MingW\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\BigInteger_v1_0.dir/objects.a -Wl,--no-whole-archive -o BigInteger_v1_0.exe -Wl,--out-implib,libBigInteger_v1_0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BigInteger_v1_0.dir\linklibs.rsp
