@@ -747,11 +747,17 @@ BigInteger BigInteger::newton_sqrt() const {
 }
 
 BigInteger BigInteger::excel_sqrt() const {
-    short len;
-    short ori;
-    short num = short(*(this->mag.rbegin()));
-    ori = sqrtDict[num];
-    len = this->mag.size();
+    int len;
+    int ori;
+    int num = short(*(this->mag.rbegin()));
+    if(num>=100){
+        num /= 100;
+        ori = sqrtDict[num];
+        len = int(this->mag.size()-1)*2+1;
+    }else{
+        ori = sqrtDict[num];
+        len = int(this->mag.size()-1)*2;
+    }
     BigInteger res(ori);
     res = res << len;
     bool t = true;
@@ -763,10 +769,6 @@ BigInteger BigInteger::excel_sqrt() const {
     }
     return (res * res <= (*this) && (res + 1) * (res + 1) > (*this)) ? res : res - 1;
 }
-#include "BigInteger.h"
-using std::vector;
-using std::list;
-using std::deque;
 BigInteger& BigInteger::operator = (const BigInteger& num)= default;
 BigInteger& BigInteger::operator=(const long long int& num) {
     *this = BigInteger(num);
