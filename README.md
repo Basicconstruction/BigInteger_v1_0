@@ -235,6 +235,14 @@ microsoft window 11
 
 本项目的测试数据暂时还没有添加，但是目前的状态时，相对于vector列有大约10%-50%的速度优化.(很可能更多内存)
 --
+本项目:
+factorial(10000) 1841ms
+fibo(10000) 131ms
+pow(3,10000) 276ms
+pow(3,10000).excel_sqrt() 14290 ms
+pow(999,999) 159ms
+pow(199,200) 28ms
+
 
 |aspect|string|python|vector|java|julia|
 |:---: | :---:|:---:|:---:|:---:|:---:|
