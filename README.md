@@ -111,9 +111,9 @@ toString()   返回字符串形式
         "999"
 printSelf()  直接输出 类似于内存中数据的存储形式。
     示例:
-        BigInteger y(999);
+        BigInteger y(99999);
         y.printSelf();
-        99 9 +
+        9999 9 +
 不过，如果仅仅直接输出数据，可以直接使用
     BigInteger y(999);
     std::cout<<y;
@@ -192,7 +192,7 @@ x = 100;
 x<<2;    ->      x = 10000;
 x = 123;
 x>>2;    ->      x = 1;
-这两个是10禁止的移位函数。
+这两个是10进制的移位函数。
 尤其是<<,被应用在乘法的构建。
 ```
 使用示例
@@ -244,6 +244,7 @@ microsoft window 11
 本项目:
 factorial(10000) 1841ms
 fibo(10000) 131ms
+fibo(50000) 695ms
 pow(3,10000) 276ms
 pow(3,10000).excel_sqrt() 14290 ms
 pow(999,999) 159ms
