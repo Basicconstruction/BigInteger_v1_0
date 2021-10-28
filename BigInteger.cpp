@@ -889,6 +889,8 @@ BigInteger& BigInteger::operator<<(helper isp){
         return *this;
     }
     int a[] = {0};
+    //在vector<int>后插入，然后在将原有位置移动，并将第一位（低位）置0，和下面的stl插入效果一样，
+    //但是，两者的性能差距不大，甚至第一种插入的方法会有数量上的限制，尽管这个限制一般不会体验出来。
     copy(a,a+1,std::inserter(this->mag, this->mag.begin()));
     return *this;
 }
@@ -932,17 +934,17 @@ BigInteger BigInteger::operator*(const long long int& b2)const{
 }
 
 BigInteger &BigInteger::operator*=(const BigInteger &b2) {
-    (*this).mag = this->mul(b2).mag;
+    *this = this->mul(b2);
     return *this;
 }
 
 BigInteger &BigInteger::operator*=(const string &b2) {
-    (*this).mag = this->mul(b2).mag;
+    *this = this->mul(b2);
     return *this;
 }
 
 BigInteger &BigInteger::operator*=(const long long int& b2) {
-    (*this).mag = this->mul(b2).mag;
+    *this = this->mul(b2);
     return *this;
 }
 

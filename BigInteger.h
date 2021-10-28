@@ -20,7 +20,7 @@ struct helper;
 class BigInteger{
 public:
     vector<int> mag;
-    int signum;
+    bool signum;
     BigInteger();
     explicit BigInteger(long long int);
     explicit BigInteger(string);
